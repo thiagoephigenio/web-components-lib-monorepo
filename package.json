@@ -1,0 +1,23 @@
+{
+  "name": "webcomponents-lib-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Projeto de Web Components",
+  "author": "Thiago Ephigenio",
+  "license": "MIT",
+  "keywords": [
+    "web components"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:webcomponents": "lerna run start --scope=web-components-lib",
+    "build:react": "lerna run build --scope=@web-components-lib/react",
+    "build:webcomponents": "lerna run build --scope=web-components-lib",
+    "build": "npm run build:webcomponents && npm run build:react"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.6"
+  }
+}
