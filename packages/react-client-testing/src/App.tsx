@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import {MyComponent} from '@web-components-lib/react';
+import { MyButton, MyComponent } from '@web-components-lib/react';
+
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <MyComponent first='teste' last='ttttt'/>
+      <MyButton variant='primary'>aaaaa</MyButton>
     </>
   )
 }
