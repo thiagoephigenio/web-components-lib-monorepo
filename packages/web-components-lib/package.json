@@ -10,8 +10,8 @@
   "unpkg": "dist/web-components-lib/web-components-lib.esm.js",
   "exports": {
     ".": {
-      "module": "./dist/index.js",
-      "import": "./dist/cjs/web-components-lib.cjs.js",
+      "require": "./dist/cjs/web-components-lib.cjs.js",
+      "import": "./dist/esm/web-components-lib.js",
       "types": "./dist/types/index.d.ts"
     },
     "./my-component": {
